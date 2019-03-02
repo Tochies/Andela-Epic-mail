@@ -1,0 +1,123 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+
+section{
+	width: 100%;
+	height: 100%;
+}
+
+/*---------------component for new Mail---------------------*/
+.send-mail{
+  margin: auto;
+  width: 70%;
+}
+.mail-content{
+  display: flex;
+  flex-direction: column;
+}
+.form-row{
+  margin-top:9px;
+}
+.form-row input, .new-group form input{
+  width: 100%;
+  height: 2em;
+}
+.form-row textarea, .new-group form textarea{
+  width: 102%;
+  height: 120%;
+}
+.form-row button{
+  margin-top: .91%;
+  height: 2.7em;
+  width: 104%;
+}
+.mail-content > .radio{
+	margin-top: 55px;
+}
+.mail-content > .radio h6{
+	margin-top: 5px;
+}
+
+/*------------------Tables for inbox, draft, deleted, retracted and group messages-----------------*/
+table{
+	width: 995px;
+}
+
+.list{
+	margin-left: 15px;
+}
+thead{
+	background-color: #43BAC0;
+	margin-bottom: 21px;
+}
+th{
+	padding:11px 15px 11px 15px;
+	margin-left: 15px;
+}
+
+td{
+	padding:12px 5px 12px 8px;
+	color: slategray;
+}
+tbody{
+	margin-top: 11px;
+}
+tbody tr{
+	margin-top: 5px;
+	background-color: rgba(12,13,14,0.05);
+}
+
+/*-------------------------------extra text included in list pages------------------*/
+.extra, .profile-edit{
+	margin-left: 15px;
+}
+
+/*------------------profile--------------*/
+.profile-edit{
+	display: flex;
+	flex-direction: column;
+	margin-top:5%;
+	margin-left:23%;
+	width:58%;
+	background-color: #e3e4e6;
+}
+.profile-text, .profile-form {
+	padding:5px 5px 5px 11px;
+}
+.profile-form button{
+	background-color: #43BAC0;
+	border-radius: 15%;
+	display: flex;
+	padding:5px 11px 5px 11px;
+
+}
+
+/*---------------------------create group------------------*/
+.new-group{
+	margin-left: 25px;
+	display: flex;
+	flex-direction: column;
+	
+}
+.new-group form button{
+	margin-top: .91%;
+  	height: 2.7em;
+  	width: 88%;
+}
+.new-group form input{
+  margin-top:.91%;
+  margin-bottom:.71%;
+  width: 87%;
+  height: 2em;
+}
+ .new-group form textarea{
+ 	margin-top:.91%;
+ 	margin-bottom:.71%;
+    width: 88%;
+    height: 100%;
+}
+.new-group form label{
+	margin-top: 17px;
+}

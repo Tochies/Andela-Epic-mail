@@ -4,7 +4,7 @@ function dashboard(id){
 	main = document.getElementById('main');
 	switch(id){
 		case 'newMail':
-			return main.innerHTML = '<object type="text/html" data="html/dashboard/sendMail.html"></object>';
+			return main.innerHTML = '<object type="text/html" data="https://tochies.github.io/Andela-Epic-mail/html/dashboard/sendMail.html"></object>';
 		
 		case 'inbox':
 			return main.innerHTML = '<object type="text/html" data="file:///home/tochie/andela_challenge/UI/html/dashboard/inboxList.html"></object>';

@@ -1,40 +1,35 @@
 
-// This handles the initial dashboard navigation and changes the main id with only the called page
-function dashboard(id){
-	main = document.getElementById('main');
-	switch(id){
-		case 'newMail':
-			return main.innerHTML = '<object type="text/html" data="https://tochies.github.io/Andela-Epic-mail/html/dashboard/sendMail.html"></object>';
-		
-		case 'inbox':
-			return main.innerHTML = '<object type="text/html" data="https://tochies.github.io/Andela-Epic-mail/html/dashboard/inboxList.html"></object>';
-		
-		case 'sent':
-			return main.innerHTML = '<object type="text/html" data="https://tochies.github.io/Andela-Epic-mail/html/dashboard/sentList.html"></object>';
-		
-		case 'draft':
-			return main.innerHTML = '<object type="text/html" data="https://tochies.github.io/Andela-Epic-mail/html/dashboard/draftList.html"></object>';
-		
-		case 'deleted':
-			return main.innerHTML = '<object type="text/html" data="https://tochies.github.io/Andela-Epic-mail/html/dashboard/deletedList.html"></object>';
-		
-		case 'retracted':
-			return main.innerHTML = '<object type="text/html" data="https://tochies.github.io/Andela-Epic-mail/html/dashboard/retractedList.html"></object>';
-		
-		case 'createGroup':
-			return main.innerHTML = '<object type="text/html" data="https://tochies.github.io/Andela-Epic-mail/html/dashboard/createGroup.html"></object>';
-		
-		case 'groupList':
-			return main.innerHTML = '<object type="text/html" data="https://tochies.github.io/Andela-Epic-mail/html/dashboard/groupList.html"></object>';
-		
-		case 'groupMessage':
-			return main.innerHTML = '<object type="text/html" data="https://tochies.github.io/Andela-Epic-mail/html/dashboard/groupMessage.html"></object>';
-		
-		case 'profile':
-			return main.innerHTML = '<object type="text/html" data="https://tochies.github.io/Andela-Epic-mail/html/dashboard/profile.html"></object>';
-		
-		default:
-			return document;
-	}
+// This handles the initial dashboard navigation and changes the html main id with only the called page
+// page ids below from dashboard.html
+const pageNamesById = {
+  newMail: 'sendMail',
+  inbox: 'inboxList',
+  sent: 'sentList',
+  draft: 'draftList',
+  deleted: 'deletedList',
+  retracted: 'retractedList',
+  createGroup: 'createGroup',
+  profile: 'profile',
+  groupList: 'groupList',
+  groupMessage: 'groupMessage',
+};
+function dashboard(id) {
+  const main = document.getElementById('main');
+  const pageName = pageNamesById[id];
+  // changes the view to the page called
+  if (pageName) {
+    main.innerHTML = `<object type="text/html" data="file:///home/tochie/andela_challenge/UI/html/dashboard/${pageName}.html"></object>`;
+  }
 }
 
+// This handles(opens) the navigation for mobile screens
+function openSlideMenu() {
+  document.getElementById('sidenav').style.visibility = 'visible';
+  document.getElementById('close').style.visibility = 'visible';
+}
+
+// This handles(closes) the navigation for mobile screens
+function closeSlideMenu() {
+  document.getElementById('sidenav').style.visibility = 'hidden';
+  document.getElementById('close').style.visibility = 'hidden';
+}

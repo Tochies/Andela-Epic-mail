@@ -21,3 +21,15 @@ function dashboard(id) {
     main.innerHTML = `<object type="text/html" data="file:///home/tochie/andela_challenge/UI/html/dashboard/${pageName}.html"></object>`;
   }
 }
+
+// This handles(opens) the navigation for mobile screens
+function openSlideMenu() {
+  document.getElementById('sidenav').style.visibility = 'visible';
+  document.getElementById('close').style.visibility = 'visible';
+}
+
+// This handles(closes) the navigation for mobile screens
+function closeSlideMenu() {
+  document.getElementById('sidenav').style.visibility = 'hidden';
+  document.getElementById('close').style.visibility = 'hidden';
+}

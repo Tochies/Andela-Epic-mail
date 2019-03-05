@@ -18,7 +18,7 @@ function dashboard(id) {
   const pageName = pageNamesById[id];
   // changes the view to the page called
   if (pageName) {
-    main.innerHTML = `<object type="text/html" data="file:///home/tochie/andela_challenge/UI/html/dashboard/${pageName}.html"></object>`;
+    main.innerHTML = `<object type="text/html" data="html/dashboard/${pageName}.html"></object>`;
   }
 }
 

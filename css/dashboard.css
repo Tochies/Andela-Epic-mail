@@ -57,7 +57,7 @@ section{
   align-items: center;
   justify-content: space-between;
   padding: 0 16px;
-  background-color: #43BAC0;
+  background-color: #FF5733 ;
 }
 
 /* Make room for the menu icon on mobile */
@@ -83,7 +83,7 @@ section{
   width: 240px;
   position: fixed;
   transition: all .3s ease-in-out;
-  background-color: darkblue;
+  background-color:  #7d0314 ;
 }
 
 .sidenav-list {
@@ -183,7 +183,7 @@ padding: 5px 5px 5px 5px;
 .card {
   display: flex;
   flex-direction: column;
-  background-color: slategray;
+  background-color: white;
   margin-bottom: 5px;
   -webkit-column-break-inside: avoid;
   height: 415px;
@@ -195,7 +195,7 @@ padding: 5px 5px 5px 5px;
   flex-direction: row;
   height:40px;
   justify-content:space-between;
-  background-color: #394263;
+  background-color: #7d0314;
   color: #FFF;
   width: 100%;
 }
@@ -300,7 +300,7 @@ footer {
   justify-content: space-between;
   padding-bottom: 26px;
   padding-top: 16px;
-  background-color: #648ca6;
+  background-color: #FF5733 ;
 }
 
 /*------------------------------------Mobile screens appear here--------------------------- */

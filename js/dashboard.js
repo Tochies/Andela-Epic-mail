@@ -16,7 +16,7 @@ function dashboard(id) {
   const main = document.getElementById('main');
   const pageName = pageNamesById[id];
   if (pageName) {
-    main.innerHTML = '<object type="text/html" data="file:///home/tochie/andela_challenge/UI/html/dashboard/' + pageName + '.html"></object>';
+    main.innerHTML = '<object type="text/html" data="https://tochies.github.io/Andela-Epic-mail/html/dashboard/' + pageName + '.html"></object>';
   }
 }
 function openSlideMenu(){

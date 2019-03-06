@@ -19,7 +19,7 @@ function dashboard(id) {
 <<<<<<< HEAD
     main.innerHTML = '<object type="text/html" data="file:///home/tochie/andela_challenge/UI/html/dashboard/' + pageName + '.html"></object>';
 =======
-    main.innerHTML = `<object type="text/html" data="file:///home/tochie/andela_challenge/UI/html/dashboard/' + pageName + '.html""></object>`;
+    main.innerHTML = '<object type="text/html" data="file:///home/tochie/andela_challenge/UI/html/dashboard/' + pageName + '.html"></object>';
 >>>>>>> 280ef949152e3eeb673c26de1f89f7ec01b261d0
   }
 }

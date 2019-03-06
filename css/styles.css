@@ -6,9 +6,10 @@
 /*---------------Display for the general content ---------------*/
 body {
     font-family: 'Quantico', sans-serif;
+    color:  #384c61;
     }
  .main{
-    width: 95%;
+ 
     margin:auto;
  }   
  a {
@@ -25,8 +26,11 @@ body {
 
 /*-------------------Display for Navigation--------------*/
 .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-size: 18px;
-    background:#4ABDAC ;
+    background:white;
     border-bottom: 1px solid white;
     padding-bottom: 12px;
     border-radius: 25px;
@@ -34,23 +38,25 @@ body {
 }
 
 .nav-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
     list-style-type: none;
-    display: none;
-    margin-left: 5px;
+    margin-left: 0 25px 0 5px;
 }
 
 .nav-links {
     text-decoration: none;
-    color: white;
-    background-color: #FF5A09;
+    color: black;
+    background-color:white ;
     border-radius: 11px;
     padding: 7px 15px 7px 15px;
     margin-left: 5px;
-    border-color: solid white 1px;
+    border: 2px solid #FF5A09;
 }
 
 .nav-links:hover{
-    background-color: #43D1AF;
+    border: 2px solid #23ca5d;
 }
 
 .nav-item li {
@@ -59,11 +65,14 @@ body {
 
 .logo {
     display: inline-block;
+
 }
 nav img{
     object-fit: contain;
     position: relative;
     padding-left: 21px;
+    height: 55px;
+    width: 151%;
 }
 .navbar-toggle {
     position: absolute;
@@ -75,6 +84,8 @@ nav img{
 }
 /*-----------------Display for Header-----------------*/
 header{
+    background-image:url("../assets/images/812.jpg");
+    background-size: contain;
     background-color: white;
     padding: 0;
     margin: auto;
@@ -96,6 +107,7 @@ header .site-name{
 }
 header .site-name h6{
     margin: auto;
+    color:   #FF5A09 ;
 }
 header .intro-note{
     display: flex;
@@ -108,7 +120,15 @@ header .intro-note{
 #name{
     font-size: 500%;
     font-family: 'Aladin', cursive;
+    color:  #123d70;
 
+}
+/*--------------------------Display for dashboard view--------------------*/
+.try-us{
+    display: flex;
+    font-style: italic;
+    justify-content: center;
+    padding-bottom: 15px;
 }
 
 /*--------------------Display for the form here------------*/
@@ -119,6 +139,7 @@ section.register {
     flex-direction: column;
     align-items: center;
     border-radius: 45px;
+    margin:155px 5px 155px 5px;
 }
 
 
@@ -157,10 +178,13 @@ section.register button{
     width: 100%;
     background-color:#FF5A09;
     border:dotted white 0.1px;
-    color: white;
     border-radius: 5px;
     font-family: 'Black Ops One', cursive;
 
+}
+section.register button a{
+    color: white;
+    text-decoration: none;
 }
 
 section.register button:hover{
@@ -169,9 +193,8 @@ section.register button:hover{
 /*---------------------------body content -----------------------*/
 .site-content{
     display: flex;
-    margin-top: 8%;
     flex-wrap: wrap;
-    margin-right: 15px;
+    margin:13% 15px 13% 15px;
     justify-content: space-between;
 }
 .content-text{
@@ -182,6 +205,20 @@ section.register button:hover{
 .content-text h3{
     text-decoration: underline;
     padding-bottom: 11px;
+    color: #FF5A09 ;
+}
+/*------------------icons --------------------------*/
+.i-one{
+    color: #581845;
+}
+.i-two{
+    color: #4b1212;
+}
+.i-three{
+    color: #082e16;
+}
+.i-four{
+    color: #FFC300 ;
 }
 
 /*-----------------------footer--------------------*/
@@ -204,60 +241,17 @@ footer .footer-menu{
 
 footer .footer-menu a{
     text-decoration: none;
-    color: white;
-    background-color: #FF5A09;
+    color: black;
+    background-color: white;
     border-radius: 11px;
-    border-color: solid white 1px;
+    border: 2px solid #FF5A09;
     padding: 7px 15px 7px 15px;
 }
-
-/*---------- Display .for mobile views-------------*/
-
-@media screen and (min-width: 768px) {
-.navigation {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 0;
-    height: 70px;
-    align-items: center;
-    }
-.nav-item {
-    display: flex;
-    margin-right: 30px;
-    flex-direction: row;
-    justify-content: flex-end;
+footer .footer-menu a:hover{
+    border: 2px solid #23ca5d;
 }
 
-.nav-item li {
-    margin: 0;
-    }
-
-.nav-links {
-    margin-left: 40px;
-    }
-
- .logo {
-     margin-top: 0;
-}
-.navbar-toggle {
-    display: none;
-}
-
-.logo:hover,
-.nav-links:hover {
-    color: rgba(255, 255, 255, 1);
-    }
-
-}
-
-.try-us{
-    display: flex;
-    font-style: italic;
-    justify-content: center;
-    padding-bottom: 15px;
-}
-
-/*----------------------sign up --------------------*/
+/*----------------------sign up/ sign-in pages --------------------*/
 .sign-up, .sign-in{
     height:36vh;
     display: flex;
@@ -291,3 +285,169 @@ footer .footer-menu a{
     justify-content: center;
     padding-top: 5%;
 }
+
+/*-------------------------------FAQ--------------------------*/
+.faq {
+    display: flex;
+    padding: 11px;
+    flex-wrap: wrap;
+}
+.title{
+    margin: auto;
+    text-decoration: underline;
+    color: #FF5A09;
+    text-align: center;
+}
+.faq img{
+    flex: 1;
+    width: 46vw;
+    height: 111%
+}
+.faq-body{
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+}
+.faq-text{
+    margin-top: 15px;
+    padding:15px 0 0 15px;
+    width: 46vw;
+    border:2px solid grey;
+}
+.faq-text h3{
+    color: #FF5A09;
+}
+.feedback{
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+.form-row{
+  margin:9px 3px 2px 3px;
+}
+.form-row input{
+  width: 100%;
+  height: 2em;
+}
+.form-row textarea{
+  width: 100%;
+  height: 120%;
+}
+.form-row button{
+  margin-top: 3%;
+  height: 2.2em;
+  width: 100%;
+  color: white;
+  background-color: #FF5A09; 
+
+}
+/*-------------------------Start responsive design for mobile here-------------------------*/
+
+/*---------- Display .for mobile views-------------*/
+
+@media screen and (max-width: 768px) {
+ /*---------- Navigation.for mobile views-------------*/   
+.navigation {
+    display: flex;
+    flex-direction: column;
+    }
+.nav-item {
+    display: flex;
+    margin-top:11px;
+    flex-direction: row;  
+}
+.nav-links {
+    border-radius: 11px;
+    padding: 5px 5px 5px 5px;
+    margin-left: 5px;
+}
+.nav-item li {
+    text-align: center;
+    font-size: 15px;
+    }
+ nav img{
+    padding-left: 0px;
+    height: 45px;
+    width: 211%;
+}   
+
+/*---------- Header .for mobile views-------------*/    
+header{
+    background-size:auto 99%;
+    background-repeat: no-repeat;
+    height: 440px;
+}
+#name{
+    font-size: 300%;
+}
+header .site-name{
+padding:37% 0 7% 0;
+}
+header .intro-note{
+    font-size: 13px;
+}
+.try-us{
+    flex-direction: column;
+    margin-top: 15px;
+    padding-bottom: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+footer {
+  padding: 8px;
+  margin-top: 19%;
+  margin-bottom: 1%;
+}
+
+/*---------- Register.for mobile views-------------*/
+section.register {
+    max-height: 300px;
+    background-color: #43D1AF;
+    border-radius: 25px;
+    margin:25px 5px 85px 5px;
+}
+section.register form .form-row input,.sign-up form input, .sign-in form input{
+    line-height: 1.5;
+    margin-bottom: 5px;
+    margin-left: 11px;
+    border-radius: 3px;
+    padding:5px;
+    width: 91%;
+}
+section.register form .form-row input:nth-child(1){
+    margin-left: 11px;
+}
+section.register button{
+    line-height: 2.5;
+    margin-left: 11px;
+    width: 93%;
+}
+.sign-up form button, .sign-in form button{
+    line-height: 2.5;
+    margin: 0 0 21px 0;
+    }
+/*---------- Site content for mobile views-------------*/
+.site-content{
+    flex-direction: column;
+}
+.content-text{
+    width: 99%;
+    margin:35px 0 0 0;
+}
+
+.body-content{
+    margin: 0 5px 25px 5px;
+}
+/*--------------------FAQ mobile------------------------------*/
+.faq img{
+    width: 91vw;
+    height: 111%
+}
+.faq-text{
+    width: 91vw;  
+}
+
+}
+
+

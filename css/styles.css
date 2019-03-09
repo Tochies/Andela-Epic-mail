@@ -1,24 +1,24 @@
 * {
-     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+    box-sizing: border-box;
+   padding: 0;
+   margin: 0;
 }
 /*---------------Display for the general content ---------------*/
 body {
-    font-family: 'Quantico', sans-serif;
-    color:  #384c61;
-    }
- .main{
- 
-    margin:auto;
- }   
- a {
-    font-family: 'Black Ops One', cursive;
- }
- i{
-    font-size:96px;
-    padding-bottom: 15px;
- }
+   font-family: 'Quantico', sans-serif;
+   color:  #384c61;
+   }
+.main{
+
+   margin:auto;
+}   
+a {
+   font-family: 'Black Ops One', cursive;
+}
+i{
+   font-size:96px;
+   padding-bottom: 15px;
+}
 /*------------fonts------------------*/    
 
 @import url('https://fonts.googleapis.com/css?family=Lato');
@@ -26,319 +26,309 @@ body {
 
 /*-------------------Display for Navigation--------------*/
 .navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 18px;
-    background:white;
-    border-bottom: 1px solid white;
-    padding-bottom: 12px;
-    border-radius: 25px;
-    margin-top:2px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 18px;
+   background:white;
+   border-top: 2px solid #23ca5d;
+   border-bottom: 2px solid #23ca5d;
+   padding-bottom: 12px;
+   margin-top:2px;
 }
 
 .nav-item {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    list-style-type: none;
-    margin-left: 0 25px 0 5px;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   list-style-type: none;
+   margin-left: 0 25px 0 5px;
 }
 
 .nav-links {
-    text-decoration: none;
-    color: black;
-    background-color:white ;
-    border-radius: 11px;
-    padding: 7px 15px 7px 15px;
-    margin-left: 5px;
-    border: 2px solid #FF5A09;
+   text-decoration: none;
+   color: black;
+   background-color:white ;
+   border-radius: 3px;
+   padding: 7px 15px 7px 15px;
+   margin-left: 5px;
+   border: 2px solid #FF5A09;
 }
 
 .nav-links:hover{
-    border: 2px solid #23ca5d;
+   border: 2px solid #23ca5d;
 }
 
 .nav-item li {
-    text-align: center;
-    }
+   text-align: center;
+   }
 
 .logo {
-    display: inline-block;
+   display: inline-block;
 
 }
 nav img{
-    object-fit: contain;
-    position: relative;
-    padding-left: 21px;
-    height: 55px;
-    width: 151%;
+   object-fit: contain;
+   position: relative;
+   padding-left: 2px;
+   margin-top:5px;
+   height: 55px;
+   width: 151%;
 }
 .navbar-toggle {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    cursor: pointer;
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 24px;
+   position: absolute;
+   top: 10px;
+   right: 20px;
+   cursor: pointer;
+   color: rgba(255, 255, 255, 0.8);
+   font-size: 24px;
 }
 /*-----------------Display for Header-----------------*/
 header{
-    background-image:url("../assets/images/812.jpg");
-    background-size: contain;
-    background-color: white;
-    padding: 0;
-    margin: auto;
-    color: #1d1e22;
-    height: 540px;
+   background-image:url("../assets/images/812.jpg");
+   background-size: contain;
+   background-color: white;
+   padding: 0;
+   margin: auto;
+   color: #1d1e22;
+   height: 540px;
 }
 
 header .site-intro{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
 }
 header .site-name{
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 7%;
-    padding-top: 10%;
+   display: flex;
+   flex-direction: column;
+   padding-bottom: 7%;
+   padding-top: 10%;
 
 }
 header .site-name h6{
-    margin: auto;
-    color:   #FF5A09 ;
+   margin: auto;
+   color:   #FF5A09 ;
 }
 header .intro-note{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-style: italic;
-    text-align: center;
-    font-size: 15px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   font-style: italic;
+   text-align: center;
+   font-size: 15px;
 }
 #name{
-    font-size: 500%;
-    font-family: 'Aladin', cursive;
-    color:  #123d70;
+   font-size: 500%;
+   font-family: 'Aladin', cursive;
+   color:  #123d70;
 
-}
-/*--------------------------Display for dashboard view--------------------*/
-.try-us{
-    display: flex;
-    font-style: italic;
-    justify-content: center;
-    padding-bottom: 15px;
-}
-
-/*--------------------Display for the form here------------*/
-section.register {
-    max-height: 600px;
-    background-color: #43D1AF;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 45px;
-    margin:155px 5px 155px 5px;
-}
-
-
-section.register .reg-text{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    margin-bottom: 3%;
-    margin-top: 3%;
-    color:white;
-}
-section.register form{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding-bottom: 11%;
-
-}
-section.register form .form-row input{
-    line-height: 2.5;
-    margin-bottom: 11px;
-    border:solid #FF5A09 0.3px;
-    box-sizing: content-box;
-    margin-left: 11px;
-    border-radius: 3px;
-    padding:5px;
-}
-section.register form .form-row input:nth-child(1){
-    margin-left: 0;
-}
-
-section.register button{
-    line-height: 2.5;
-    margin: 11px 0 0 0;
-    width: 100%;
-    background-color:#FF5A09;
-    border:dotted white 0.1px;
-    border-radius: 5px;
-    font-family: 'Black Ops One', cursive;
-
-}
-section.register button a{
-    color: white;
-    text-decoration: none;
-}
-
-section.register button:hover{
-    background-color: #F7B733;
 }
 /*---------------------------body content -----------------------*/
 .site-content{
-    display: flex;
-    flex-wrap: wrap;
-    margin:13% 15px 13% 15px;
-    justify-content: space-between;
+   display: flex;
+   flex-wrap: wrap;
+   margin:13% 15px 13% 15px;
+   justify-content: space-between;
 }
 .content-text{
-    width: 23%;
-    margin-right: 15px;
-    text-align: center;
+   width: 23%;
+   margin-right: 15px;
+   text-align: center;
 }
 .content-text h3{
-    text-decoration: underline;
-    padding-bottom: 11px;
-    color: #FF5A09 ;
+   text-decoration: underline;
+   padding-bottom: 11px;
+   color: #FF5A09 ;
 }
 /*------------------icons --------------------------*/
 .i-one{
-    color: #581845;
+   color: #581845;
 }
 .i-two{
-    color: #4b1212;
+   color: #4b1212;
 }
 .i-three{
-    color: #082e16;
+   color: #082e16;
 }
 .i-four{
-    color: #FFC300 ;
+   color: #FFC300 ;
 }
 
 /*-----------------------footer--------------------*/
 footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 18px;
-  background-color: #43D1AF;
-  margin-top: 9%;
-  margin-bottom: 3%;
-  border-bottom-left-radius: 35px;
-  border-top-right-radius: 35px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: space-between;
+ padding: 18px;
+ background-color: white;
+ margin-top: 9%;
+ border-top: 2px solid #23ca5d;
+ border-bottom: 2px solid #23ca5d;
 }
 
 footer .footer-menu{
-    margin-bottom: 16px;   
+   margin-bottom: 16px;   
 }
 
 footer .footer-menu a{
-    text-decoration: none;
-    color: black;
-    background-color: white;
-    border-radius: 11px;
-    border: 2px solid #FF5A09;
-    padding: 7px 15px 7px 15px;
+   text-decoration: none;
+   color: black;
+   background-color: white;
+   border-radius: 3px;
+   border: 2px solid #FF5A09;
+   padding: 7px 15px 7px 15px;
 }
 footer .footer-menu a:hover{
-    border: 2px solid #23ca5d;
+   border: 2px solid #23ca5d;
 }
 
 /*----------------------sign up/ sign-in pages --------------------*/
-.sign-up, .sign-in{
-    height:36vh;
-    display: flex;
-    justify-content: center;
-    padding-top:5%;
-}
-.sign-up form input, .sign-in form input{
-    line-height: 2;
-    margin-bottom: 11px;
-    border:solid #FF5A09 0.3px;
-    box-sizing: content-box;
-    margin-left: 11px;
-    border-radius: 3px;
-    padding:5px;
-}
-
-.sign-up form button, .sign-in form button{
-    line-height: 2.5;
-    margin: 11px 0 0 0;
-    width: 100%;
-    background-color:#FF5A09;
-    border:dotted white 0.1px;
-    color: white;
-    border-radius: 5px;
-    font-family: 'Black Ops One', cursive;
-}
-
 .sign-up-text{
-    height:16vh;
-    display: flex;
-    justify-content: center;
-    padding-top: 5%;
+   height:16vh;
+   display: flex;
+   justify-content: center;
+   padding-top: 5%;
+   text-align: center;
+}
+
+.register {
+   background-color: #FFFFFF;
+   width: 400px;
+   height: 450px;
+   margin: 7em auto;
+   border-radius: 1.5em;
+   box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+.sign-in-register{
+   height: 350px;
+}
+
+.sign {
+   padding-top: 40px;
+   color:  #7d0314 ;
+   font-family: 'Ubuntu', sans-serif;
+   font-weight: bold;
+   font-size: 23px;
+   text-align: center;
+}
+
+form.form1 {
+   padding-top: 40px;
+}
+
+.form1 input {
+width: 76%;
+color: rgb(38, 50, 56);
+font-weight: 700;
+font-size: 14px;
+letter-spacing: 1px;
+background: rgba(136, 126, 126, 0.04);
+padding: 10px 20px;
+border: none;
+border-radius: 20px;
+outline: none;
+box-sizing: border-box;
+border: 2px solid rgba(0, 0, 0, 0.02);
+margin-left: 46px;
+text-align: center;
+margin-bottom: 27px;
+font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.form1 input:focus {
+   border: 2px solid rgba(0, 0, 0, 0.18) !important;
+   
+}
+
+.submit {
+   cursor: pointer;
+   border-radius: 5em;
+   color: #fff;
+   background: linear-gradient(to right, #c03207, #FF5A09);
+   padding: 10px 40px 10px 40px; 
+   font-family: 'Ubuntu', sans-serif;
+   margin-left: 35%;
+   font-size: 13px;
+   margin-top: 20%
+   box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.04);
+}
+
+.submit:hover{
+   background: white;
+   border: 2px solid #23ca5d;
+   color: black; 
+}
+
+.forgot {
+   display: none;
+   text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+   color: #23ca5d;
+   padding-top: 15px;
+}
+
+a {
+   text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+   color: #23ca5d;
+   text-decoration: none;
 }
 
 /*-------------------------------FAQ--------------------------*/
 .faq {
-    display: flex;
-    padding: 11px;
-    flex-wrap: wrap;
+   display: flex;
+   padding: 11px;
+   flex-wrap: wrap;
 }
 .title{
-    margin: auto;
-    text-decoration: underline;
-    color: #FF5A09;
-    text-align: center;
+   margin: auto;
+   text-decoration: underline;
+   color: #FF5A09;
+   text-align: center;
 }
 .faq img{
-    flex: 1;
-    width: 46vw;
-    height: 111%
+   flex: 1;
+   width: 46vw;
+   height: 111%
 }
 .faq-body{
-    display: flex;
-    flex-direction: column;
-    margin-top: 45px;
+   display: flex;
+   flex-direction: column;
+   margin-top: 45px;
 }
 .faq-text{
-    margin-top: 15px;
-    padding:15px 0 0 15px;
-    width: 46vw;
-    border:2px solid grey;
+   margin-top: 15px;
+   padding:15px 0 0 15px;
+   width: 46vw;
+   border:2px solid grey;
 }
 .faq-text h3{
-    color: #FF5A09;
+   color: #FF5A09;
 }
 .feedback{
-    display: flex;
-    justify-content: center;
-    margin-top: 45px;
+   display: flex;
+   justify-content: center;
+   margin-top: 45px;
 }
 .form-row{
-  margin:9px 3px 2px 3px;
+ margin:9px 3px 2px 3px;
 }
 .form-row input{
-  width: 100%;
-  height: 2em;
+ width: 100%;
+ height: 2em;
 }
 .form-row textarea{
-  width: 100%;
-  height: 120%;
+ width: 100%;
+ height: 120%;
 }
 .form-row button{
-  margin-top: 3%;
-  height: 2.2em;
-  width: 100%;
-  color: white;
-  background-color: #FF5A09; 
+ margin-top: 3%;
+ height: 2.2em;
+ width: 100%;
+ color: white;
+ background-color: #FF5A09; 
 
 }
 /*-------------------------Start responsive design for mobile here-------------------------*/
@@ -346,106 +336,71 @@ footer .footer-menu a:hover{
 /*---------- Display .for mobile views-------------*/
 
 @media screen and (max-width: 768px) {
- /*---------- Navigation.for mobile views-------------*/   
+/*---------- Navigation.for mobile views-------------*/   
 .navigation {
-    display: flex;
-    flex-direction: column;
-    }
-.nav-item {
-    display: flex;
-    margin-top:11px;
-    flex-direction: row;  
-}
+   display: flex;
+   }
+
 .nav-links {
-    border-radius: 11px;
-    padding: 5px 5px 5px 5px;
-    margin-left: 5px;
+   border-radius: 3px;
+   padding: 5px 5px 5px 5px;
+   margin-left: 5px;
 }
 .nav-item li {
-    text-align: center;
-    font-size: 15px;
-    }
- nav img{
-    padding-left: 0px;
-    height: 45px;
-    width: 211%;
+   text-align: center;
+   font-size: 14px;
+   }
+nav img{
+   padding-left: 0px;
+   height: 35px;
+   width: 121%;
 }   
+
 
 /*---------- Header .for mobile views-------------*/    
 header{
-    background-size:auto 99%;
-    background-repeat: no-repeat;
-    height: 440px;
+   background-size:auto 99%;
+   background-repeat: no-repeat;
+   height: 440px;
 }
 #name{
-    font-size: 300%;
+   font-size: 300%;
 }
 header .site-name{
 padding:37% 0 7% 0;
 }
 header .intro-note{
-    font-size: 13px;
-}
-.try-us{
-    flex-direction: column;
-    margin-top: 15px;
-    padding-bottom: 5px;
-    font-size: 14px;
-    text-align: center;
+   font-size: 13px;
 }
 
 footer {
-  padding: 8px;
-  margin-top: 19%;
-  margin-bottom: 1%;
+ padding: 8px;
+ margin-top: 19%;
 }
 
 /*---------- Register.for mobile views-------------*/
-section.register {
-    max-height: 300px;
-    background-color: #43D1AF;
-    border-radius: 25px;
-    margin:25px 5px 85px 5px;
+.register {
+   border-radius: 0px;
 }
-section.register form .form-row input,.sign-up form input, .sign-in form input{
-    line-height: 1.5;
-    margin-bottom: 5px;
-    margin-left: 11px;
-    border-radius: 3px;
-    padding:5px;
-    width: 91%;
-}
-section.register form .form-row input:nth-child(1){
-    margin-left: 11px;
-}
-section.register button{
-    line-height: 2.5;
-    margin-left: 11px;
-    width: 93%;
-}
-.sign-up form button, .sign-in form button{
-    line-height: 2.5;
-    margin: 0 0 21px 0;
-    }
 /*---------- Site content for mobile views-------------*/
 .site-content{
-    flex-direction: column;
+   flex-direction: column;
 }
 .content-text{
-    width: 99%;
-    margin:35px 0 0 0;
+   width: 99%;
+   margin:35px 0 0 0;
 }
 
 .body-content{
-    margin: 0 5px 25px 5px;
+   margin: 0 5px 25px 5px;
 }
 /*--------------------FAQ mobile------------------------------*/
 .faq img{
-    width: 91vw;
-    height: 111%
+   width: 91vw;
+   height: 111%
 }
 .faq-text{
-    width: 91vw;  
+   width: 91vw;  
 }
 
 }

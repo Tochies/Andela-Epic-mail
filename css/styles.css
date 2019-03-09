@@ -31,9 +31,9 @@ i{
    align-items: center;
    font-size: 18px;
    background:white;
-   border-bottom: 1px solid white;
+   border-top: 2px solid #23ca5d;
+   border-bottom: 2px solid #23ca5d;
    padding-bottom: 12px;
-   border-radius: 25px;
    margin-top:2px;
 }
 
@@ -49,7 +49,7 @@ i{
    text-decoration: none;
    color: black;
    background-color:white ;
-   border-radius: 11px;
+   border-radius: 3px;
    padding: 7px 15px 7px 15px;
    margin-left: 5px;
    border: 2px solid #FF5A09;
@@ -70,7 +70,8 @@ i{
 nav img{
    object-fit: contain;
    position: relative;
-   padding-left: 21px;
+   padding-left: 2px;
+   margin-top:5px;
    height: 55px;
    width: 151%;
 }
@@ -123,73 +124,6 @@ header .intro-note{
    color:  #123d70;
 
 }
-/*--------------------------Display for dashboard view--------------------*/
-.try-us{
-   display: flex;
-   font-style: italic;
-   justify-content: center;
-   padding-bottom: 15px;
-}
-
-/*--------------------Display for the form here------------*/
-section.register {
-   max-height: 600px;
-   background-color: #43D1AF;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   border-radius: 45px;
-   margin:155px 5px 155px 5px;
-}
-
-
-section.register .reg-text{
-   display: flex;
-   justify-content: center;
-   flex-direction: column;
-   text-align: center;
-   margin-bottom: 3%;
-   margin-top: 3%;
-   color:white;
-}
-section.register form{
-   display: flex;
-   flex-direction: column;
-   flex-wrap: wrap;
-   padding-bottom: 11%;
-
-}
-section.register form .form-row input{
-   line-height: 2.5;
-   margin-bottom: 11px;
-   border:solid #FF5A09 0.3px;
-   box-sizing: content-box;
-   margin-left: 11px;
-   border-radius: 3px;
-   padding:5px;
-}
-section.register form .form-row input:nth-child(1){
-   margin-left: 0;
-}
-
-section.register button{
-   line-height: 2.5;
-   margin: 11px 0 0 0;
-   width: 100%;
-   background-color:#FF5A09;
-   border:dotted white 0.1px;
-   border-radius: 5px;
-   font-family: 'Black Ops One', cursive;
-
-}
-section.register button a{
-   color: white;
-   text-decoration: none;
-}
-
-section.register button:hover{
-   background-color: #F7B733;
-}
 /*---------------------------body content -----------------------*/
 .site-content{
    display: flex;
@@ -228,11 +162,10 @@ footer {
  align-items: center;
  justify-content: space-between;
  padding: 18px;
- background-color: #43D1AF;
+ background-color: white;
  margin-top: 9%;
- margin-bottom: 3%;
- border-bottom-left-radius: 35px;
- border-top-right-radius: 35px;
+ border-top: 2px solid #23ca5d;
+ border-bottom: 2px solid #23ca5d;
 }
 
 footer .footer-menu{
@@ -243,7 +176,7 @@ footer .footer-menu a{
    text-decoration: none;
    color: black;
    background-color: white;
-   border-radius: 11px;
+   border-radius: 3px;
    border: 2px solid #FF5A09;
    padding: 7px 15px 7px 15px;
 }
@@ -252,38 +185,95 @@ footer .footer-menu a:hover{
 }
 
 /*----------------------sign up/ sign-in pages --------------------*/
-.sign-up, .sign-in{
-   height:36vh;
-   display: flex;
-   justify-content: center;
-   padding-top:5%;
-}
-.sign-up form input, .sign-in form input{
-   line-height: 2;
-   margin-bottom: 11px;
-   border:solid #FF5A09 0.3px;
-   box-sizing: content-box;
-   margin-left: 11px;
-   border-radius: 3px;
-   padding:5px;
-}
-
-.sign-up form button, .sign-in form button{
-   line-height: 2.5;
-   margin: 11px 0 0 0;
-   width: 100%;
-   background-color:#FF5A09;
-   border:dotted white 0.1px;
-   color: white;
-   border-radius: 5px;
-   font-family: 'Black Ops One', cursive;
-}
-
 .sign-up-text{
    height:16vh;
    display: flex;
    justify-content: center;
    padding-top: 5%;
+   text-align: center;
+}
+
+.register {
+   background-color: #FFFFFF;
+   width: 400px;
+   height: 450px;
+   margin: 7em auto;
+   border-radius: 1.5em;
+   box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+.sign-in-register{
+   height: 350px;
+}
+
+.sign {
+   padding-top: 40px;
+   color:  #7d0314 ;
+   font-family: 'Ubuntu', sans-serif;
+   font-weight: bold;
+   font-size: 23px;
+   text-align: center;
+}
+
+form.form1 {
+   padding-top: 40px;
+}
+
+.form1 input {
+width: 76%;
+color: rgb(38, 50, 56);
+font-weight: 700;
+font-size: 14px;
+letter-spacing: 1px;
+background: rgba(136, 126, 126, 0.04);
+padding: 10px 20px;
+border: none;
+border-radius: 20px;
+outline: none;
+box-sizing: border-box;
+border: 2px solid rgba(0, 0, 0, 0.02);
+margin-left: 46px;
+text-align: center;
+margin-bottom: 27px;
+font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.form1 input:focus {
+   border: 2px solid rgba(0, 0, 0, 0.18) !important;
+   
+}
+
+.submit {
+   cursor: pointer;
+   border-radius: 5em;
+   color: #fff;
+   background: linear-gradient(to right, #c03207, #FF5A09);
+   padding: 10px 40px 10px 40px; 
+   font-family: 'Ubuntu', sans-serif;
+   margin-left: 35%;
+   font-size: 13px;
+   margin-top: 20%
+   box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.04);
+}
+
+.submit:hover{
+   background: white;
+   border: 2px solid #23ca5d;
+   color: black; 
+}
+
+.forgot {
+   display: none;
+   text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+   color: #23ca5d;
+   padding-top: 15px;
+}
+
+a {
+   text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+   color: #23ca5d;
+   text-decoration: none;
 }
 
 /*-------------------------------FAQ--------------------------*/
@@ -349,27 +339,23 @@ footer .footer-menu a:hover{
 /*---------- Navigation.for mobile views-------------*/   
 .navigation {
    display: flex;
-   flex-direction: column;
    }
-.nav-item {
-   display: flex;
-   margin-top:11px;
-   flex-direction: row;  
-}
+
 .nav-links {
-   border-radius: 11px;
+   border-radius: 3px;
    padding: 5px 5px 5px 5px;
    margin-left: 5px;
 }
 .nav-item li {
    text-align: center;
-   font-size: 15px;
+   font-size: 14px;
    }
 nav img{
    padding-left: 0px;
-   height: 45px;
-   width: 211%;
+   height: 35px;
+   width: 121%;
 }   
+
 
 /*---------- Header .for mobile views-------------*/    
 header{
@@ -386,47 +372,16 @@ padding:37% 0 7% 0;
 header .intro-note{
    font-size: 13px;
 }
-.try-us{
-   flex-direction: column;
-   margin-top: 15px;
-   padding-bottom: 5px;
-   font-size: 14px;
-   text-align: center;
-}
 
 footer {
  padding: 8px;
  margin-top: 19%;
- margin-bottom: 1%;
 }
 
 /*---------- Register.for mobile views-------------*/
-section.register {
-   max-height: 300px;
-   background-color: #43D1AF;
-   border-radius: 25px;
-   margin:25px 5px 85px 5px;
+.register {
+   border-radius: 0px;
 }
-section.register form .form-row input,.sign-up form input, .sign-in form input{
-   line-height: 1.5;
-   margin-bottom: 5px;
-   margin-left: 11px;
-   border-radius: 3px;
-   padding:5px;
-   width: 91%;
-}
-section.register form .form-row input:nth-child(1){
-   margin-left: 11px;
-}
-section.register button{
-   line-height: 2.5;
-   margin-left: 11px;
-   width: 93%;
-}
-.sign-up form button, .sign-in form button{
-   line-height: 2.5;
-   margin: 0 0 21px 0;
-   }
 /*---------- Site content for mobile views-------------*/
 .site-content{
    flex-direction: column;

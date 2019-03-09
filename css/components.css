@@ -40,34 +40,6 @@ section{
 	margin-top: 5px;
 }
 
-/*------------------Tables for inbox, draft, deleted, retracted and group messages-----------------*/
-table{
-	width: 995px;
-}
-
-.list{
-	margin-left: 15px;
-}
-thead{
-	background-color: #43BAC0;
-	margin-bottom: 21px;
-}
-th{
-	padding:11px 15px 11px 15px;
-	margin-left: 15px;
-}
-
-td{
-	padding:12px 5px 12px 8px;
-	color: slategray;
-}
-tbody{
-	margin-top: 11px;
-}
-tbody tr{
-	margin-top: 5px;
-	background-color: rgba(12,13,14,0.05);
-}
 
 /*-------------------------------extra text included in list pages------------------*/
 .extra, .profile-edit{
@@ -87,11 +59,11 @@ tbody tr{
 	padding:5px 5px 5px 11px;
 }
 .profile-form button{
-	background-color: #43BAC0;
+	background-color: #7d0314;
 	border-radius: 15%;
 	display: flex;
 	padding:5px 11px 5px 11px;
-
+  color: white;
 }
 
 /*---------------------------create group------------------*/
@@ -120,4 +92,143 @@ tbody tr{
 }
 .new-group form label{
 	margin-top: 17px;
+}
+
+/*---------------------------table list ---------------------*/
+.card-main {
+  background-color: #FFF;
+  width: 100%;
+  border:none;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: row;
+  height:35px;
+  color: #FFF;
+  width: 100%;
+  margin-bottom: 12px;
+}
+.card-header-title, .card-header-title-group {
+	height: 32px;
+	padding-top:9px;
+	margin:auto;
+	border-right: 1px solid white;
+	background-color: #7d0314;
+	text-align: center;
+	font-weight: bold;
+}
+.card-header-title-group{
+  width: 15%;
+  margin: 5px 0 0 3px;
+  display: flex;
+  padding-left: 16px;
+
+}
+.card-header-title:nth-child(3){
+	width: 53%;
+}
+.card-header-title:nth-child(1),
+.card-header-title:nth-child(2),
+.card-header-title:nth-child(4){
+	width: 15%;
+}
+
+
+.card-row {
+  position: relative;
+  display: flex;
+  flex: 1;
+  margin: 5px 0 ;
+}
+
+.card-time {
+  display: flex;
+  font-size: 13px;
+  padding: 9px;
+  width: 15%;
+  color: slategrey;
+  background-color: rgba(12,13,14,0.05);
+  border-right: 2px solid white;
+}
+
+.card-detail {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 9px;
+  transform: translateX(0);
+  transition: all .3s;
+  width: 54%;
+  color: slategrey;
+  background-color: rgba(12,13,14,0.05);
+  border-right: 2px solid white;
+}
+.card-detail:hover {
+  background-color: #f0f0f0;
+  transform: translateX(4px);
+  cursor: pointer;
+  color: slategrey;
+}
+.card-source {
+  width: 15%;
+  color: slategrey;
+   background-color: rgba(12,13,14,0.05);
+   padding: 9px;
+   border-right: 2px solid white;
+}
+.card-title {
+  padding: 9px;
+  width: 15%;
+  color: slategrey;
+   background-color: rgba(12,13,14,0.05);
+   border-right: 2px solid white;
+}
+
+
+@media only screen and (max-width:769px) {	
+.card-header, .card-header-title{
+	display: none;
+	visibility: hidden;
+}	
+.card-row {
+	display: flex;
+  	flex-direction: column;
+ 	 flex-wrap: wrap;
+  }
+
+.card-time {
+  font-size: 13px;
+  color: grey;
+  width: 99%;
+  padding:5px 0 0 5px;
+  margin: 0;
+}
+
+.card-detail {
+  transform: translateX(0);
+  transition: all .3s;
+  width: 99%;
+  padding:5px 0 0 5px;
+  margin: 0;
+}
+.card-detail:hover {
+  background-color: #f0f0f0;
+  transform: translateX(4px);
+  cursor: pointer;
+}
+.card-source {
+  line-height: 1.8;
+  color: #7d0314;
+  width: 99%;
+  padding:5px 0 0 5px;
+  margin: 0;
+}
+.card-title {
+  color: #777;
+  font-weight: bold;
+  width: 99%;
+  padding:5px 0 0 5px;
+  margin: 0;
+	}
 }

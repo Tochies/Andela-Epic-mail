@@ -30,9 +30,13 @@ i{
    justify-content: space-between;
    align-items: center;
    font-size: 18px;
+<<<<<<< HEAD
    background:white;
    border-top: 2px solid #23ca5d;
    border-bottom: 2px solid #23ca5d;
+=======
+   background:linear-gradient(to right, #74aa5c, rgb(9, 99, 57));
+>>>>>>> 19d5d59bac6ac88af5464b44554d21ebf9b9dcae
    padding-bottom: 12px;
    margin-top:2px;
 }
@@ -52,11 +56,18 @@ i{
    border-radius: 3px;
    padding: 7px 15px 7px 15px;
    margin-left: 5px;
+<<<<<<< HEAD
    border: 2px solid #FF5A09;
 }
 
 .nav-links:hover{
    border: 2px solid #23ca5d;
+=======
+}
+
+.nav-links:hover{
+   border: 2px solid #FF5A09;
+>>>>>>> 19d5d59bac6ac88af5464b44554d21ebf9b9dcae
 }
 
 .nav-item li {
@@ -121,8 +132,12 @@ header .intro-note{
 #name{
    font-size: 500%;
    font-family: 'Aladin', cursive;
+<<<<<<< HEAD
    color:  #123d70;
 
+=======
+   color: linear-gradient(to right, #74aa5c, rgb(9, 99, 57));
+>>>>>>> 19d5d59bac6ac88af5464b44554d21ebf9b9dcae
 }
 /*---------------------------body content -----------------------*/
 .site-content{
@@ -153,6 +168,7 @@ header .intro-note{
 }
 .i-four{
    color: #FFC300 ;
+<<<<<<< HEAD
 }
 
 /*-----------------------footer--------------------*/
@@ -276,6 +292,130 @@ a {
    text-decoration: none;
 }
 
+=======
+}
+
+/*-----------------------footer--------------------*/
+footer {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: space-between;
+ padding: 18px;
+ background:linear-gradient(to right, #74aa5c, rgb(9, 99, 57));
+ margin-top: 9%;
+}
+
+footer .footer-menu{
+   margin-bottom: 16px;   
+}
+
+footer .footer-menu a{
+   text-decoration: none;
+   color: black;
+   background-color: white;
+   border-radius: 3px;
+   padding: 7px 15px 7px 15px;
+}
+footer .footer-menu a:hover{
+   border: 2px solid #FF5A09;
+}
+.footer-signature{
+   color: #f6f6ff;
+}
+/*----------------------sign up/ sign-in pages --------------------*/
+.sign-up-text{
+   height:16vh;
+   display: flex;
+   justify-content: center;
+   padding-top: 5%;
+   text-align: center;
+}
+
+.register {
+   background-color: #FFFFFF;
+   width: 400px;
+   height: 450px;
+   margin: 7em auto;
+   border-radius: 1.5em;
+   box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+.sign-in-register{
+   height: 350px;
+}
+
+.sign {
+   padding-top: 40px;
+   color:  #7d0314 ;
+   font-family: 'Ubuntu', sans-serif;
+   font-weight: bold;
+   font-size: 23px;
+   text-align: center;
+}
+
+form.form1 {
+   padding-top: 40px;
+}
+
+.form1 input {
+width: 76%;
+color: rgb(38, 50, 56);
+font-weight: 700;
+font-size: 14px;
+letter-spacing: 1px;
+background: rgba(136, 126, 126, 0.04);
+padding: 10px 20px;
+border: none;
+border-radius: 20px;
+outline: none;
+box-sizing: border-box;
+border: 2px solid rgba(0, 0, 0, 0.02);
+margin-left: 46px;
+text-align: center;
+margin-bottom: 27px;
+font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.form1 input:focus {
+   border: 2px solid rgba(0, 0, 0, 0.18) !important;
+   
+}
+
+.submit {
+   cursor: pointer;
+   border-radius: 5em;
+   color: #fff;
+   background: linear-gradient(to right, #74aa5c, rgb(9, 99, 57));
+   padding: 10px 40px 10px 40px; 
+   font-family: 'Ubuntu', sans-serif;
+   margin-left: 35%;
+   font-size: 13px;
+   margin-top: 20%
+   box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.04);
+}
+
+.submit:hover{
+   background: white;
+   border: 2px solid #23ca5d;
+   color: black; 
+}
+
+.forgot {
+   display: none;
+   text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+   color: #23ca5d;
+   padding-top: 15px;
+}
+
+a {
+   text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+   color: #23ca5d;
+   text-decoration: none;
+}
+
+>>>>>>> 19d5d59bac6ac88af5464b44554d21ebf9b9dcae
 /*-------------------------------FAQ--------------------------*/
 .faq {
    display: flex;

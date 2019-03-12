@@ -1,0 +1,293 @@
+* {
+     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/*---------------Display for the general content ---------------*/
+body {
+    font-family: 'Quantico', sans-serif;
+    }
+ .main{
+    width: 95%;
+    margin:auto;
+ }   
+ a {
+    font-family: 'Black Ops One', cursive;
+ }
+ i{
+    font-size:96px;
+    padding-bottom: 15px;
+ }
+/*------------fonts------------------*/    
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Devonshire');
+
+/*-------------------Display for Navigation--------------*/
+.navigation {
+    font-size: 18px;
+    background:#4ABDAC ;
+    border-bottom: 1px solid white;
+    padding-bottom: 12px;
+    border-radius: 25px;
+    margin-top:2px;
+}
+
+.nav-item {
+    list-style-type: none;
+    display: none;
+    margin-left: 5px;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: white;
+    background-color: #FF5A09;
+    border-radius: 11px;
+    padding: 7px 15px 7px 15px;
+    margin-left: 5px;
+    border-color: solid white 1px;
+}
+
+.nav-links:hover{
+    background-color: #43D1AF;
+}
+
+.nav-item li {
+    text-align: center;
+    }
+
+.logo {
+    display: inline-block;
+}
+nav img{
+    object-fit: contain;
+    position: relative;
+    padding-left: 21px;
+}
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+}
+/*-----------------Display for Header-----------------*/
+header{
+    background-color: white;
+    padding: 0;
+    margin: auto;
+    color: #1d1e22;
+    height: 540px;
+}
+
+header .site-intro{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+header .site-name{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 7%;
+    padding-top: 10%;
+
+}
+header .site-name h6{
+    margin: auto;
+}
+header .intro-note{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-style: italic;
+    text-align: center;
+    font-size: 15px;
+}
+#name{
+    font-size: 500%;
+    font-family: 'Aladin', cursive;
+
+}
+
+/*--------------------Display for the form here------------*/
+section.register {
+    max-height: 600px;
+    background-color: #43D1AF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 45px;
+}
+
+
+section.register .reg-text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    color:white;
+}
+section.register form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 11%;
+
+}
+section.register form .form-row input{
+    line-height: 2.5;
+    margin-bottom: 11px;
+    border:solid #FF5A09 0.3px;
+    box-sizing: content-box;
+    margin-left: 11px;
+    border-radius: 3px;
+    padding:5px;
+}
+section.register form .form-row input:nth-child(1){
+    margin-left: 0;
+}
+
+section.register button{
+    line-height: 2.5;
+    margin: 11px 0 0 0;
+    width: 100%;
+    background-color:#FF5A09;
+    border:dotted white 0.1px;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Black Ops One', cursive;
+
+}
+
+section.register button:hover{
+    background-color: #F7B733;
+}
+/*---------------------------body content -----------------------*/
+.site-content{
+    display: flex;
+    margin-top: 8%;
+    flex-wrap: wrap;
+    margin-right: 15px;
+    justify-content: space-between;
+}
+.content-text{
+    width: 23%;
+    margin-right: 15px;
+    text-align: center;
+}
+.content-text h3{
+    text-decoration: underline;
+    padding-bottom: 11px;
+}
+
+/*-----------------------footer--------------------*/
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px;
+  background-color: #43D1AF;
+  margin-top: 9%;
+  margin-bottom: 3%;
+  border-bottom-left-radius: 35px;
+  border-top-right-radius: 35px;
+}
+
+footer .footer-menu{
+    margin-bottom: 16px;   
+}
+
+footer .footer-menu a{
+    text-decoration: none;
+    color: white;
+    background-color: #FF5A09;
+    border-radius: 11px;
+    border-color: solid white 1px;
+    padding: 7px 15px 7px 15px;
+}
+
+/*---------- Display .for mobile views-------------*/
+
+@media screen and (min-width: 768px) {
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+    }
+.nav-item {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.nav-item li {
+    margin: 0;
+    }
+
+.nav-links {
+    margin-left: 40px;
+    }
+
+ .logo {
+     margin-top: 0;
+}
+.navbar-toggle {
+    display: none;
+}
+
+.logo:hover,
+.nav-links:hover {
+    color: rgba(255, 255, 255, 1);
+    }
+
+}
+
+.try-us{
+    display: flex;
+    font-style: italic;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+/*----------------------sign up --------------------*/
+.sign-up, .sign-in{
+    height:36vh;
+    display: flex;
+    justify-content: center;
+    padding-top:5%;
+}
+.sign-up form input, .sign-in form input{
+    line-height: 2;
+    margin-bottom: 11px;
+    border:solid #FF5A09 0.3px;
+    box-sizing: content-box;
+    margin-left: 11px;
+    border-radius: 3px;
+    padding:5px;
+}
+
+.sign-up form button, .sign-in form button{
+    line-height: 2.5;
+    margin: 11px 0 0 0;
+    width: 100%;
+    background-color:#FF5A09;
+    border:dotted white 0.1px;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Black Ops One', cursive;
+}
+
+.sign-up-text{
+    height:16vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+}

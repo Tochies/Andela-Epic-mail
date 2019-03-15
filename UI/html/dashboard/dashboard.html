@@ -3,42 +3,59 @@
 <head>
   <title>Your Dashboard</title>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="stylesheet" type="text/css" href="../../css/dashboard.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
-  <!--The body of the dashboard uses grid and flex to display different sections of the dashboard-->
    <div class="grid-container">
-     <!-------------------------------Breadcrumb menu icon for mobile screens-->
-    <div class="menu-icon">
-      <i class="fas fa-bars header-menu"  onclick="openSlideMenu()"></i>
-     </div>
-   
     <header class="header">
-      <div class="header-link"><a href="">Home</a></div>
-      <div class="header-avatar"></div>
+      <div class="header-link"></div>
+      <div class="header-avatar">
+          <a href="../../index.html">Log out</a>
+      </div>
     </header>
-    <!----------------------Navigation menu--------------------------->
-    <aside class="sidenav" id="sidenav">
-          <a class="close"  onclick="closeSlideMenu()">
-            <i id="close" class="fas fa-times"></i>
-          </a>
-          <ul class="sidenav-list" id="sidenav-list">
-              <li class="sidenav-list-item"> <a onclick="dashboard('newMail');" >New mail</a></li>
-              <li class="sidenav-list-item"> <a onclick="dashboard('inbox');" >Inbox</a></li>
-              <li class="sidenav-list-item"> <a onclick="dashboard('sent');" >Sent</a></li>
-              <li class="sidenav-list-item"> <a onclick="dashboard('draft');" >Draft</a></li>
-              <li class="sidenav-list-item"> <a onclick="dashboard('deleted');" >Deleted</a></li>
-              <li class="sidenav-list-item"> <a onclick="dashboard('retracted');" >Retracted</a></li>
-              <li class="sidenav-list-item"> <a onclick="dashboard('profile');" >Profile</a></li>
-              <li class="sidenav-list-item"><a > Groups </a> 
-                  <ul class="sidenav-list-item-dropdown">
-                      <li><a onclick="dashboard('createGroup');">Create Group</a></li>
-                      <li><a onclick="dashboard('groupList');">Your Groups</a></li>
-                      <li><a onclick="dashboard('groupMessage');">Send Group Message</a></li>
-                  </ul>
-              </li>
-          </ul>
+    <aside class="sidenav" id="sidenav" tabindex="0">
+    <div class="smartphone-menu-trigger"><i class="fas fa-bars"></i></div>
+  <div class="avatar">
+        <img src="../../assets/images/profile/images.jpeg" />
+    <h2>Emeasoba Tochie</h2>
+  </div>
+ <nav>
+  <ul>
+    <li class="dropdown">
+      <a onclick="dashboard('newMail');">New mail</a>
+    </li>
+    <li class="dropdown">
+     <a onclick="dashboard('inbox');" >Inbox</a>
+    </li>
+    <li class="dropdown">
+      <a onclick="dashboard('sent');" >Sent</a>
+    </li>
+    <li class="dropdown">
+      <a onclick="dashboard('draft');" >Draft</a>
+    </li>
+    <li class="dropdown">
+      <a onclick="dashboard('deleted');" >Deleted</a>
+    </li>
+    <li class="dropdown">
+      <a onclick="dashboard('retracted');" >Retracted</a>
+    </li>
+    <li class="dropdown">
+      <a onclick="dashboard('profile');" >Profile</a>
+    </li>
+    <li class="dropdown">
+      <input type="checkbox" />
+      <a href="#" data-toggle="dropdown">Groups</a>
+      <ul class="dropdown-menu">
+        <li><a onclick="dashboard('createGroup');">Create Group</a></li>
+        <li><a onclick="dashboard('groupList');">Your Groups</a></li>
+        <li><a onclick="dashboard('groupMessage');">Send Group Message</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </aside>
 
     <main class="main" id="main">
@@ -47,7 +64,6 @@
         <div class="main-header-updates">You sent a message to Andela recently</div>
       </div>
 
-      <!--A section for latest inbox and to send a quick email-->
       <div class="main-cards">
         <div class="card">
           <div class="card-header">
@@ -79,46 +95,34 @@
           </div> 
           <div class="card-main">
             <div class="card-row">
-              <div class="card-time">
-                <div>today</div>
-              </div>
-              <div class="card-icon"><i class="fas fa-gift"></i></div>
               <div class="card-detail">
                 <div class="card-source text-bold">Emeasoba Tochi</div>
                 <div class="card-title">Gear up for bootcamp</div>
                 <div class="card-description">In the end we will never run out of music</div>
+                <div class="card-time">Sat 19:57pm</div>
               </div>
             </div>
             <div class="card-row">
-              <div class="card-time">
-                <div>Yesterday</div>
-              </div>
-              <div class="card-icon"><i class="fas fa-gift"></i></div>
               <div class="card-detail">
                 <div class="card-source text-bold">Tochi Kingsley</div>
                 <div class="card-title">CSS is Crazy thrilling</div>
                 <div class="card-description">How does the computer even generate colors from hex codes</div>
+                <div class="card-time">Thurs 19:57pm</div>
               </div>
             </div>
             <div class="card-row">
-              <div class="card-time">
-                <div>Thursday</div>
-              </div>
-              <div class="card-icon"><i class="fas fa-gift"></i></div>
               <div class="card-detail">
                 <div class="card-source text-bold">Bootcamp boss</div>
                 <div class="card-title">Hey, Take that coffee</div>
                 <div class="card-description">Target is always the same...great jobs on time</div>
+                <div class="card-time">Thurs 19:57pm</div>
               </div>
             </div>
           </div>
         </div>
-      </div>
     </main>
     <footer class="footer">
       <div class="footer-menu">
-          <a href="">Beta mode</a>
-          <a href=""> Credits</a>
       </div>
       <div class="footer-signature">Epic Mail by Emeasoba Tochi </div>
     </footer>

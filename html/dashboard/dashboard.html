@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Dashboard</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" type="text/css" href="../../css/dashboard.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+   <div class="grid-container">
+    <header class="header">
+      <div class="header-link"></div>
+      <div class="header-avatar">
+          <a href="../../index.html">Log out</a>
+      </div>
+    </header>
+    <aside class="sidenav" id="sidenav" tabindex="0">
+    <div class="smartphone-menu-trigger"><i class="fas fa-bars"></i></div>
+  <div class="avatar">
+        <img src="../../assets/images/profile/tochie.JPG" />
+    <h2>Emeasoba Tochie</h2>
+  </div>
+ <nav>
+  <ul>
+    <li class="dropdown">
+      <a onclick="dashboard('newMail');">New mail</a>
+    </li>
+    <li class="dropdown">
+     <a onclick="dashboard('inbox');" >Inbox</a>
+    </li>
+    <li class="dropdown">
+      <a onclick="dashboard('sent');" >Sent</a>
+    </li>
+    <li class="dropdown">
+      <a onclick="dashboard('draft');" >Draft</a>
+    </li>
+    <li class="dropdown">
+      <a onclick="dashboard('deleted');" >Deleted</a>
+    </li>
+    <li class="dropdown">
+      <a onclick="dashboard('retracted');" >Retracted</a>
+    </li>
+    <li class="dropdown">
+      <a onclick="dashboard('profile');" >Profile</a>
+    </li>
+    <li class="dropdown">
+      <input type="checkbox" />
+      <a href="#" data-toggle="dropdown">Groups</a>
+      <ul class="dropdown-menu">
+        <li><a onclick="dashboard('createGroup');">Create Group</a></li>
+        <li><a onclick="dashboard('groupList');">Your Groups</a></li>
+        <li><a onclick="dashboard('groupMessage');">Send Group Message</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </aside>
+
+    <main class="main" id="main">
+      <div class="main-header">
+        <div class="main-header-heading">Hello Tochi</div>
+        <div class="main-header-updates">You sent a message to Andela recently</div>
+      </div>
+
+      <div class="main-cards">
+        <div class="card">
+          <div class="card-header">
+            <div class="card-header-title text-light">Send a Quick Mail</div>
+          </div> 
+          <div class="send-mail" >
+            <form class="mail-content" action="">
+              <div class="form-row"> 
+                <label for="Title">Title <span class="form-require">*</span></label><br>
+                <input type="text" id="last-name" placeholder="Enter message Title">
+              </div>
+              <div class="form-row"> 
+                <label for="email">Email <span class="form-require">*</span></label><br>
+                <input type="email" id="email" placeholder="Enter Recipients email here">
+              </div> 
+              <div class="form-row"> 
+                <label for="message">Message <span class="form-require">*</span></label><br>
+                <textarea rows="6" id="message" placeholder="Enter your message here"></textarea>
+              </div>
+              <div class="form-row"> 
+                <button type="submit">Send Message</button> 
+              </div> 
+            </form>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <div class="card-header-title text-light">Your recent Messages </div>
+          </div> 
+          <div class="card-main">
+            <div class="card-row">
+              <div class="card-detail">
+                <div class="card-source text-bold">Emeasoba Tochi</div>
+                <div class="card-title">Gear up for bootcamp</div>
+                <div class="card-description">In the end we will never run out of music</div>
+                <div class="card-time">Sat 19:57pm</div>
+              </div>
+            </div>
+            <div class="card-row">
+              <div class="card-detail">
+                <div class="card-source text-bold">Tochi Kingsley</div>
+                <div class="card-title">CSS is Crazy thrilling</div>
+                <div class="card-description">How does the computer even generate colors from hex codes</div>
+                <div class="card-time">Thurs 19:57pm</div>
+              </div>
+            </div>
+            <div class="card-row">
+              <div class="card-detail">
+                <div class="card-source text-bold">Bootcamp boss</div>
+                <div class="card-title">Hey, Take that coffee</div>
+                <div class="card-description">Target is always the same...great jobs on time</div>
+                <div class="card-time">Thurs 19:57pm</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-menu">
+      </div>
+      <div class="footer-signature">Epic Mail by Emeasoba Tochi </div>
+    </footer>
+  </div>
+</body>
+<script type="text/javascript" src="../../js/dashboard.js"></script>
+</html>
